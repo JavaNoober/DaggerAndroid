@@ -3,19 +3,23 @@ package com.xiaoqi.daggerandroid;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
-import com.xiaoqi.daggerandroid.component.ABModule;
-import com.xiaoqi.daggerandroid.component.DaggerAComponent;
 
 import javax.inject.Inject;
-
-import dagger.android.AndroidInjection;
 
 public class MainActivity extends BaseActivity {
 
     @Inject
     A2 a2;
+
+    @Inject
+    C c;
+
+
+    @Inject
+    UserInfo userInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +33,9 @@ public class MainActivity extends BaseActivity {
         });
 //        DaggerAComponent.builder().aBModule(new ABModule(new A2(), new B2())).build().inject(this);
         a2.someThingA();
+        c.doSomethingC();
+
+        userInfo.setAge("111");
+        Log.e("DAGGER", userInfo.toString());
     }
 }

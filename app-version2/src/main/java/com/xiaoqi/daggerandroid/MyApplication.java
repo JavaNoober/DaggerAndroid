@@ -20,7 +20,7 @@ public class MyApplication extends Application implements HasActivityInjector {
     @Override
     public void onCreate() {
         super.onCreate();
-        DaggerMyAppComponent.create().inject(this);
+        DaggerMyAppComponent.builder().context(this).build().inject(this);
     }
 
     @Override

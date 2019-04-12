@@ -8,7 +8,6 @@ import dagger.android.AndroidInjector;
 
 @Subcomponent(modules = {
         AndroidInjectionModule.class,
-//        ABModule.class
 })
 public interface MainActivitySubcomponent extends AndroidInjector<MainActivity> {
 
