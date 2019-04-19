@@ -32,4 +32,5 @@ public class ABParamModule {
     public C provideC() {
         return new C(a,b);
     }
+
 }
