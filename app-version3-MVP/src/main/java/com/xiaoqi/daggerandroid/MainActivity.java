@@ -12,7 +12,7 @@ import com.xiaoqi.daggerandroid.view.MainView;
 import javax.inject.Inject;
 
 
-public class MainActivity extends BaseActivity<MainPresenter, MainView> implements MainView {
+public class MainActivity extends DaggerMvpActivity<MainPresenter, MainView> implements MainView {
 
     @Inject
     A2 a2;

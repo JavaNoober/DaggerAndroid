@@ -7,7 +7,7 @@ import com.xiaoqi.daggerandroid.view.IBaseView
 import dagger.android.AndroidInjection
 import javax.inject.Inject
 
-open class BaseActivity<T: BasePresenter<K>, K: IBaseView>: AppCompatActivity(), IBaseView {
+open class DaggerMvpActivity<T: BasePresenter<K>, K: IBaseView>: AppCompatActivity(), IBaseView {
 
 
     @Inject lateinit var presenter: T

@@ -5,7 +5,7 @@ import com.xiaoqi.daggerandroid.presenter.MainPresenter
 import com.xiaoqi.daggerandroid.view.MainView
 import javax.inject.Inject
 
-class Main2Activity : BaseActivity<MainPresenter, MainView>(), MainView {
+class Main2Activity : DaggerMvpActivity<MainPresenter, MainView>(), MainView {
     override fun showToast() {
 
     }
@@ -16,6 +16,5 @@ class Main2Activity : BaseActivity<MainPresenter, MainView>(), MainView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         a2.someThingA()
-//        DaggerAComponent.builder().aBModule(ABModule(A2(), B2())).build().inject(this)
     }
 }
