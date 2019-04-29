@@ -24,18 +24,18 @@ import dagger.android.support.AndroidSupportInjectionModule;
 public interface MyAppComponent {
     void inject(MyApplication application);
 
-    A getA();
-
-    B getB();
+//    A getA();
+//
+//    B getB();
 
     @Component.Builder
     interface Builder{
 
-        @BindsInstance
-        Builder a(A a2);
-
-        @BindsInstance
-        Builder b(B b2);
+//        @BindsInstance
+//        Builder a(A a2);
+//
+//        @BindsInstance
+//        Builder b(B b2);
 
 
 //        Builder engineModule(ABParamModule abParamModule);
