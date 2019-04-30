@@ -9,9 +9,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app-demo" />
+            <option value="$PROJECT_DIR$/app-demo-subMoudle" />
             <option value="$PROJECT_DIR$/app-simple" />
             <option value="$PROJECT_DIR$/app-version2" />
             <option value="$PROJECT_DIR$/app-version3-MVP" />
+            <option value="$PROJECT_DIR$/core" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
