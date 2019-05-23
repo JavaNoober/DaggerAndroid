@@ -1,7 +1,7 @@
 package com.xiaoqi.demo
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.xiaoqi.demo.presenter.BasePresenter
 import com.xiaoqi.demo.view.IBaseView
 import dagger.android.AndroidInjection

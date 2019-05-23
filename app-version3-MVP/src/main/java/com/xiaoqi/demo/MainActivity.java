@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import androidx.lifecycle.LifecycleObserver;
+
 import com.xiaoqi.demo.presenter.MainPresenter;
 import com.xiaoqi.demo.view.MainView;
 

@@ -1,7 +1,8 @@
 package com.xiaoqi.demo
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.LifecycleObserver
 import com.xiaoqi.demo.presenter.BasePresenter
 import com.xiaoqi.demo.view.IBaseView
 import dagger.android.AndroidInjection
@@ -16,5 +17,6 @@ open class DaggerMvpActivity<T: BasePresenter<K>, K: IBaseView>: AppCompatActivi
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
         presenter.attachView(this as K)
+        lifecycle.addObserver(presenter as LifecycleObserver)
     }
 }
