@@ -19,4 +19,9 @@ open class DaggerMvpActivity<T: BasePresenter<K>, K: IBaseView>: AppCompatActivi
         presenter.attachView(this as K)
         lifecycle.addObserver(presenter as LifecycleObserver)
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        lifecycle.removeObserver(presenter as LifecycleObserver)
+    }
 }

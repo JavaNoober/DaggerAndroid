@@ -32,4 +32,9 @@ public class MainPresenter extends BasePresenter<MainView> {
         Log.e("MainPresenter", "onPause");
     }
 
+    @Override
+    public void onDestroy(@NonNull LifecycleOwner owner) {
+        super.onDestroy(owner);
+        Log.e("MainPresenter", "onDestroy");
+    }
 }
